@@ -22,7 +22,7 @@ export const projects = [
     ],
     
     github: "https://github.com/GopalMaheshwarii/AlgoArena",
-    live:   "https://algoarena.live",
+    live:   "https://algoarena.maheshwari.site/",
     featured: true,
   },
 

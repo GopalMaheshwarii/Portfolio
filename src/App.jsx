@@ -26,7 +26,7 @@ export default function App() {
       {/* Content — z-20, pointer-events controlled per element */}
       <main
         id="main-content"
-        className="relative z-20 pointer-events-none"
+        className="relative z-20 pointer-events-none w-full"
       >
         <Hero />
         <Projects />

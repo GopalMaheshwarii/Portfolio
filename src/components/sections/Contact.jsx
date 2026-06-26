@@ -15,7 +15,7 @@ const LINKS = [
     id:       'email',
     title:    'Email',
     value:    'gopalmaheshwari214@gmail.com',
-    href:     `mailto:${siteConfig.email}`,
+    href:     `https://mail.google.com/mail/?view=cm&fs=1&to=${siteConfig.email}`,
     icon:     <Mail size={18} />,
     color:    'text-rose-400',
     border:   'border-rose-500/20',
@@ -154,7 +154,8 @@ export default function Contact() {
             {/* Resume download */}
             <motion.a
               href={siteConfig.resume}
-              download
+              target="_blank"             
+              rel="noopener noreferrer" 
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="
@@ -172,7 +173,7 @@ export default function Contact() {
               aria-label="Download resume PDF"
             >
               <FileText size={15} aria-hidden="true" />
-              Download Resume
+              View Resume
             </motion.a>
 
           </motion.div>
@@ -217,7 +218,7 @@ function ContactCard({ link }) {
   return (
     <motion.a
       href={link.href}
-      target={link.id === 'email' ? '_self' : '_blank'}
+      target="_blank"      
       rel="noopener noreferrer"
       whileHover={{ scale: 1.02, y: -2 }}
       whileTap={{ scale: 0.98 }}

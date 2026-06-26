@@ -38,7 +38,7 @@ const SOCIAL = [
     label: 'Codeforces profile',
   },
   {
-    href:  `mailto:${siteConfig.email}`,
+    href:  `https://mail.google.com/mail/?view=cm&fs=1&to=${siteConfig.email}`,
     icon:  <Mail size={16} />,
     label: 'Send email',
   },
@@ -60,7 +60,7 @@ export default function Footer() {
 
   return (
     <footer
-      className="relative z-10 border-t border-white/8"
+      className="relative z-10 border-t border-white/8 backdrop-blur-xl"
       role="contentinfo"
     >
       <div className="max-w-7xl mx-auto px-5 md:px-10 lg:px-16 py-14">
@@ -148,7 +148,7 @@ export default function Footer() {
                 <a
                   key={s.label}
                   href={s.href}
-                  target={s.href.startsWith('mailto') ? '_self' : '_blank'}
+                  target="_blank"      
                   rel="noopener noreferrer"
                   role="listitem"
                   className="
@@ -171,7 +171,8 @@ export default function Footer() {
             {/* Resume */}
             <a
               href={siteConfig.resume}
-              download
+              target="_blank"        
+              rel="noopener noreferrer"
               className="
                 inline-flex items-center gap-2
                 text-sm text-gray-400 hover:text-white
@@ -183,12 +184,14 @@ export default function Footer() {
               aria-label="Download resume PDF"
             >
               <FileText size={14} aria-hidden="true" />
-              Download Resume
+              View Resume
             </a>
 
             {/* Email */}
             <a
-              href={`mailto:${siteConfig.email}`}
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${siteConfig.email}`}
+              target="_blank"              // ✅ ADD
+              rel="noopener noreferrer" 
               className="
                 text-sm text-gray-500 hover:text-white
                 transition-colors duration-150 w-fit break-all

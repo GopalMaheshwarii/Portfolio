@@ -195,7 +195,8 @@ export default function Hero() {
               {/* PRIMARY — Resume download */}
               <motion.a
                 href={siteConfig.resume}
-                download
+                target="_blank"              
+                rel="noopener noreferrer" 
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="
@@ -210,10 +211,10 @@ export default function Hero() {
                   focus-visible:ring-offset-2
                   focus-visible:ring-offset-[#020010]
                 "
-                aria-label="Download resume as PDF"
+                aria-label="View resume (opens in new tab)"
               >
                 <FileText size={15} aria-hidden="true" />
-                Download Resume
+                View Resume 
               </motion.a>
 
               {/* SECONDARY — View Projects */}

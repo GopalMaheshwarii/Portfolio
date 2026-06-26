@@ -11,12 +11,12 @@ export const siteConfig = {
   
   email: "gopalmaheshwari214@gmail.com",
   phone: "+91-9528997190",
-  resume: "/resume.pdf",
+  resume: "https://drive.google.com/drive/folders/1ztHOGjskXo0cjOQV4b3nPf8kFIqJnwJk?usp=drive_link",
   
   social: {
     github:     "https://github.com/GopalMaheshwarii",
     linkedin:   "https://www.linkedin.com/in/gopal-maheshwari-/",
-    leetcode:   "https://leetcode.com/u/GopalMaheshwarii",
+    leetcode:   "https://leetcode.com/u/GopalMaheshwari",
     codeforces: "https://codeforces.com/profile/GopalMaheshwarii",
   },
   

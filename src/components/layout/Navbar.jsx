@@ -162,7 +162,8 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <motion.a
               href={siteConfig.resume}
-              download
+              target="_blank"       
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="hidden sm:inline-flex items-center gap-2
@@ -269,7 +270,8 @@ export default function Navbar() {
                 <div className="pt-3 mt-2 border-t border-white/8 px-1">
                   <motion.a
                     href={siteConfig.resume}
-                    download
+                    target="_blank"              // ✅ ADD
+                    rel="noopener noreferrer"
                     custom={NAV_ITEMS.length}
                     variants={mobileItemVariants}
                     initial="closed"

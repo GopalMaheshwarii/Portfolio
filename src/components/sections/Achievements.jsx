@@ -1,8 +1,7 @@
 import { motion }              from 'framer-motion';
 import {
-  Trophy, Code2, Target,
+  Trophy,Target,
   Award, Star, TrendingUp,
-  ExternalLink,
 }                              from 'lucide-react';
 import { SiLeetcode,
          SiCodeforces }        from 'react-icons/si';

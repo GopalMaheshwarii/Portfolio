@@ -1,3 +1,9 @@
+// ─── IMPORT IMAGES ────────────────────────────────────────────────────────────
+import algoArenaImg from '../assets/algoarena.png';
+import wanderLustImg from '../assets/wanderlust.png';
+import swiggyImg from '../assets/swiggy.png';
+
+// ─── PROJECTS DATA ────────────────────────────────────────────────────────────
 export const projects = [
   {
     id: "algo-arena",
@@ -21,6 +27,7 @@ export const projects = [
       "Monaco Editor for in-browser coding experience",
     ],
     
+    image: algoArenaImg,  // ✅ Image added
     github: "https://github.com/GopalMaheshwarii/AlgoArena",
     live:   "https://algoarena.maheshwari.site/",
     featured: true,
@@ -46,8 +53,9 @@ export const projects = [
       "Admin dashboard for full listing management",
     ],
     
+    image: wanderLustImg,  // ✅ Image added
     github: "https://github.com/GopalMaheshwarii/WanderLust",
-    live:   "https://wanderlust-demo.live",
+    live:   "https://wanderlust.maheshwari.site/",
     featured: true,
   },
 
@@ -71,8 +79,9 @@ export const projects = [
       "Veg/non-veg filter with real-time menu data",
     ],
     
+    image: swiggyImg,  // ✅ Image added
     github: "https://github.com/GopalMaheshwarii/swiggy-clone",
-    live:   "#",
+    live:   "https://swiggy.maheshwari.site/",
     featured: false,
   },
 ];
